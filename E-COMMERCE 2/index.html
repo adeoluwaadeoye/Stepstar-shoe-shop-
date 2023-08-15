@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>CodeWhirl | SneakerHub</title>
+
+    <!--------------GOOGLE FONTS---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gruppo&family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://openlayers.org/en/v6.13.0/build/ol.js"></script>
+
+    <!-- --------------SWIPER SLIDER--------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <!-- -----------FAVICON-------------- -->
+    <link rel="shortcut icon" href="IMAGES/SNEAKER__8.png">
+
+    <!-- ----------MAIN LINK------------ -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body>
+    <!-- -------------------HEADER----------------- -->
+    <header class="fixed-header">
+        <div class="brand">
+            <a href="index.html">
+                <div class="brand-text">
+                    <h4>Step Star</h4>
+                    <span>Collective</span>
+                </div>
+            </a>
+        </div>
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+        <nav class="nav-system">
+            <ul class="nav-inner">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#products">Featured</a></li>
+                <li><a href="#new">New In</a></li>
+                <li><a href="#contact">contact us</a></li>
+                <li><a href="#about">about us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-cart">
+            <div class="header-cart-img">
+                <img src="IMAGES/shopping-cart-3.png" alt="" width="30" height="30">
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-container">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="home-left">
+                        <h2>Footwear Frenzy,</h2>
+                        <h4>Your One-Stop Shoe Shop.</h4>
+                        <p class="home-text">
+                            Uncover the latest trends and timeless classics from renowned brands that define the
+                            pinnacle of craftsmanship and quality. Our commitment to delivering footwear that not only
+                            complements your outfit but also pampers your feet, ensures that you'll find the perfect fit
+                            every time
+                        </p>
+                        <div class="home-search">
+                            <input type="search" placeholder="Search, New arrivals ">
+                            <span class="search-text-icon">
+                                <span>Go</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500">
+
+                    <div class="home-right">
+                        <div class="hero-img">
+                            <img src="IMAGES/SNEAKER__19.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="shoe-category">
+            <div class="shoe-buttons">
+                <button class="filter-button first-button" data-category="all">All</button>
+                <button class="filter-button" data-category="sport">Sport</button>
+                <button class="filter-button" data-category="casual">Casual</button>
+                <button class="filter-button" data-category="formal">Formal</button>
+                <button class="filter-button" data-category="sandals">Sandals</button>
+            </div>
+
+            <div class="shoe-images">
+                <div class="shoe-item sport" data-category="sport">
+                    <img class="shoe-image" src="IMAGES/SPORT__5.png" alt="Sport Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 1</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item casual" data-category="casual">
+                    <img class="shoe-image" src="IMAGES/SNEAKER__1.png" alt="Casual Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Sneaker 1</p>
+                        <p class="shoe-price">&#8358; 4600</p>
+                    </div>
+                </div>
+                <div class="shoe-item sandals" data-category="sandals">
+                    <img class="shoe-image" src="IMAGES/sandal-3.png" alt="sandals">
+                    <div class="shoe-info">
+                        <p class="shoe-name">sandal 3</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item formal" data-category="formal">
+                    <img class="shoe-image" src="products/shoe-1b.png" alt="Formal Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 1</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item sport" data-category="sport">
+                    <img class="shoe-image" src="IMAGES/SPORT__1.jpg" alt="Sport Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 1</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item  sandals" data-category="sandals">
+                    <img class="shoe-image" src="IMAGES/sandal-1.png" alt="sandals">
+                    <div class="shoe-info">
+                        <p class="shoe-name">sandal 1</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item formal" data-category="formal">
+                    <img class="shoe-image" src="products/shoe-2-.png" alt="formal Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 1</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item sandals" data-category="sandals">
+                    <img class="shoe-image" src="IMAGES/sandal-2.png" alt="sandals">
+                    <div class="shoe-info">
+                        <p class="shoe-name">sandal 2</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item sport" data-category="sport">
+                    <img class="shoe-image" src="IMAGES/SPORT__6.png" alt="Sport Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 2</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item casual" data-category="casual">
+                    <img class="shoe-image" src="IMAGES/SNEAKER__15.png" alt="Casual Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Sneaker 4</p>
+                        <p class="shoe-price">&#8358; 43600</p>
+                    </div>
+                </div>
+                <div class="shoe-item formal" data-category="formal">
+                    <img class="shoe-image" src="products/shoe-3.png" alt="formal Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 3</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item casual" data-category="casual">
+                    <img class="shoe-image" src="IMAGES/SNEAKER__14.png" alt="Casual Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Casual 10</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item sport" data-category="sport">
+                    <img class="shoe-image" src="IMAGES/SPORT__3.jpg" alt="Sport Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 3</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item casusl" data-category="casual">
+                    <img class="shoe-image" src="IMAGES/SNEAKER__22.png" alt="Casual Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Sneaker 5</p>
+                        <p class="shoe-price">&#8358; 49600</p>
+                    </div>
+                </div>
+                <div class="shoe-item formal" data-category="formal">
+                    <img class="shoe-image" src="products/shoe-4.png" alt="Formal Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 9</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item sport" data-category="sport">
+                    <img class="shoe-image" src="IMAGES/SPORT__4.png" alt="Sport Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Shoe 4</p>
+                        <p class="shoe-price">&#8358; 45000</p>
+                    </div>
+                </div>
+                <div class="shoe-item casual" data-category="casual">
+                    <img class="shoe-image" src="IMAGES/SNEAKER__19.png" alt="Casual Shoe">
+                    <div class="shoe-info">
+                        <p class="shoe-name">Sneaker 7</p>
+                        <p class="shoe-price">&#8358; 44600</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="category-btn">See more</button>
+        </section>
+
+
+
+
+
+        <div class="additional-guide">
+            <div class="guide-wrapper">
+                <div data-aos="zoom-in">
+                    <h3><i class="fas fa-shopping-bag"></i> Shoe Buying Guide</h3>
+                    <p>Not sure which shoes to choose? Our comprehensive buying guide will help you make the right
+                        decision.
+                        From
+                        analyzing your foot type to understanding cushioning and support, we've got you covered.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="guide-wrapper">
+                <div data-aos="zoom-in">
+                    <h3><i class="fas fa-cogs"></i> Shoe Technology Showcase</h3>
+                    <p>Experience cutting-edge technology in our shoes. From energy-returning midsoles to breathable
+                        mesh uppers, our advanced features provide ultimate comfort and performance for every step.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="guide-wrapper">
+                <div data-aos="zoom-in">
+                    <h3><i class="fas fa-shoe-prints"></i> Shoe Care Tips</h3>
+                    <p>Keep your shoes in top shape with our expert care tips. Learn how to clean, store, and
+                        maintain
+                        your footwear to extend their lifespan and preserve their pristine condition.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="guide-wrapper">
+                <div data-aos="zoom-in">
+                    <h3><i class="fas fa-palette"></i> Shoe Styling Tips</h3>
+                    <p>Unleash your fashion creativity with our shoe styling tips. Find outfit ideas and inspiration
+                        to
+                        create stylish looks that complement your favorite pairs of shoes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="grid-social">
+            <img src="ICONS/customer-service-2.png" alt="icon" width="70" height="70">
+            <p>Message Us</p>
+        </div>
+
+
+
+
+        <section class="products" id="products">
+            <div class="product" id="product">
+                <h2>Featured Products</h2>
+
+                <div data-aos="zoom-in-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="product-wrapper">
+                        <!-- Trending Collection -->
+                        <div class="product-inner">
+                            <h3>Trending</h3>
+                            <ul class="sports-collection">
+                                <li>
+                                    <img src="IMAGES/SNEAKER__1.png" alt="Sports Shoe 1">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SNEAKER 10</p>
+                                        <p class="shoe-price">₦45,000</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                                <!-- Add more sports items here -->
+
+                                <li>
+                                    <img src="IMAGES/SNEAKER__10.png" alt="Sports Shoe 2">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SNEAKER 1</p>
+                                        <p class="shoe-price">₦59,500</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+
+                                <!-- Add more sports items here -->
+                                <li>
+                                    <img src="IMAGES/SPORT__3.jpg" alt="Sports Shoe 2">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SPORT 2</p>
+                                        <p class="shoe-price">₦49,000</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <!-- New Collections -->
+                        <div class="product-inner">
+                            <h3>New Collections</h3>
+                            <ul class="sports-collection">
+                                <li>
+                                    <img src="IMAGES/SPORT__1.jpg" alt="Sports Shoe 3">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SPORT 1</p>
+                                        <p class="shoe-price">₦50,500</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                                <!-- Add more sports items here -->
+
+                                <li>
+                                    <img src="IMAGES/SNEAKER__9.png" alt="Sports Shoe 4">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SNEAKER 9</p>
+                                        <p class="shoe-price">₦41,200</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+
+                                <!-- Add more sports items here -->
+                                <li>
+                                    <img src="IMAGES/SNEAKER__3.png" alt="Sports Shoe 2">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SNEAKER 3</p>
+                                        <p class="shoe-price">₦49,500</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Sports Collection -->
+                        <div class="product-inner">
+                            <h3>Sports</h3>
+                            <ul class="sports-collection">
+                                <li>
+                                    <img src="IMAGES/SPORT__2.png" alt="Sports Shoe 5">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SPORT 2</p>
+                                        <p class="shoe-price">₦48,800</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                                <!-- Add more sports items here -->
+
+                                <li>
+                                    <img src="IMAGES/SPORT__4.png" alt="Sports Shoe 6">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SPORT 4</p>
+                                        <p class="shoe-price">₦49,000</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+
+                                <!-- Add more sports items here -->
+                                <li>
+                                    <img src="IMAGES/SPORT__5.png" alt="Sports Shoe 2">
+                                    <div class="shoe-info-a">
+                                        <p class="shoe-name">SPORT 5</p>
+                                        <p class="shoe-price">₦49,500</p>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fas fa-gift"></i>
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-random"></i>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="more-product">See More</button>
+            </div>
+
+
+            <!-- Swiper Slide for Product Showcase -->
+            <div class="swiper-container product-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 1</p>
+                        <img src="IMAGES/SNEAKER__1.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦15,000</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SPORT 2</p>
+                        <img src="IMAGES/SPORT__2.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦19,800</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 10</p>
+                        <img src="IMAGES/SNEAKER__10.png" alt="Shoe 2">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦18,500</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SPORT 4</p>
+                        <img src="IMAGES/SPORT__4.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦19,800</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 3</p>
+                        <img src="IMAGES/SNEAKER__11.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦48,000</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 4</p>
+                        <img src="IMAGES/SNEAKER__12.png" alt="Shoe 2">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦52,500</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SPORT 6</p>
+                        <img src="IMAGES/SPORT__6.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦43,600</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 5</p>
+                        <img src="IMAGES/SNEAKER__13.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦50,500</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 6</p>
+                        <img src="IMAGES/SNEAKER__6.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦45,500</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="shoe-name">SHOE 2</p>
+                        <img src="IMAGES/SNEAKER__2.png" alt="Shoe 1">
+                        <div class="shoe-info">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Tempore ullam molestiae ea laborum beatae eveniet explicabo,
+                                quas perferendis obcaecati esse?
+                            </p>
+                            <p class="shoe-price">₦39,800</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add pagination here -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="10" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+
+            <div class="home-ads">
+                <div class="home-ads-box">
+                    <span>45% OFF</span>
+                    <h2>Summer Collection</h2>
+                    <img src="IMAGES/SNEAKER__6.png" alt="Shoe 1">
+                    <p>Get ready for the hottest styles this summer! Discover the latest trends in footwear and step
+                        into
+                        the
+                        season</p>
+                    <i class="fas fa-long-arrow-right"></i>
+                </div>
+
+                <div class="home-ads-box">
+                    <span>30% OFF</span>
+                    <h2>Summer Collection</h2>
+                    <img src="IMAGES/SNEAKER__5.png" alt="Shoe 1">
+                    <p>Get ready for the hottest styles this summer! Discover the latest trends in footwear and step
+                        into
+                        the
+                        season</p>
+                    <i class="fas fa-long-arrow-right"></i>
+                </div>
+
+
+                <div class="home-ads-box-text">
+                    <h2>Summer Collection</h2>
+                    <div class="summer-img">
+                        <img src="IMAGES/SNEAKER__7.png" alt="">
+                        <img src="IMAGES/SPORT__3.jpg" alt="">
+                    </div>
+
+                    <div data-aos="fade-down">
+                        <p>
+                            Embrace the scorching days with the sizzling new collection of summer footwear. From chic
+                            sandals that effortlessly complement your beachside look to sleek sneakers perfect for your
+                            urban
+                            adventures, this season's trends have got you covered from head to toe. Slip into
+                            comfortable
+                            espadrilles to
+                            add a touch of casual elegance to your outfits or strut your stuff in trendy platform heels
+                            that
+                            elevate
+                            any ensemble to new heights.
+                        </p>
+                    </div>
+
+
+
+                    <button>More Collections</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <section class="latest-collections" id="new">
+            <h2>Latest Collections</h2>
+            <h4>Welcome to our latest shoe collection! Explore a wide range of stylish and comfortable footwear
+                that suits your taste and lifestyle.</h4>
+
+            <div class="collection-container">
+                <div class="collection-item">
+                    <img src="IMAGES/SPORT__3.jpg" alt="Shoe 1">
+                    <div class="item-info">
+                        <div data-aos="zoom-in-down">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora impedit debitis,
+                                minima
+                                inventore cum laboriosam, corporis doloribus quo optio error ullam praesentium
+                                architecto.
+                            </p>
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <img src="IMAGES/sandal-1.png" alt="Shoe 2">
+                    <div class="item-info">
+                        <div data-aos="zoom-in-down">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora impedit debitis,
+                                minima
+                                inventore cum laboriosam, corporis doloribus quo optio error ullam praesentium
+                                architecto.
+                            </p>
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <img src="products/shoe-1b.png" alt="Shoe 3">
+                    <div class="item-info">
+                        <div data-aos="zoom-in-down">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora impedit debitis,
+                                minima
+                                inventore cum laboriosam, corporis doloribus quo optio error ullam praesentium
+                                architecto.
+                            </p>
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+
+                <div class="collection-item">
+                    <img src="IMAGES/discount-2.png" alt="Shoe 4">
+                    <div class="item-info">
+                        <div data-aos="flip-up">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora impedit debitis,
+                                minima
+                                inventore cum laboriosam, corporis doloribus quo optio error ullam praesentium
+                                architecto.
+                            </p>
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="more-product">Explore Collections</button>
+        </section>
+
+
+
+
+        <section class="product-guide">
+            <h2>Product Guide</h2>
+
+            <div class="categories-wrapper">
+                <div class="category">
+                    <h4>Classic Elegance</h4>
+                    <div data-aos="zoom-in-down">
+                        <p>Elevate your style with our collection of classic formal shoes. Discover exquisite leather
+                            dress
+                            shoes and
+                            polished oxfords for business meetings, weddings, and special events.</p>
+                        <img src="products/shoe-1b.png" alt="Formal Shoes">
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <h4>Running Shoes</h4>
+                    <div data-aos="zoom-in-up">
+                        <p>Discover our collection of high-performance running shoes. Whether you're a seasoned marathon
+                            runner or a casual jogger, we have the perfect pair to enhance your running experience.</p>
+                        <img src="images/SPORT__2.png" alt="Running Shoes">
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <h4>Casual Shoes</h4>
+                    <div data-aos="zoom-in-right">
+                        <p>Explore our stylish and comfortable casual shoes that are perfect for everyday wear. From
+                            trendy
+                            sneakers
+                            to
+                            versatile loafers, find your go-to pair for any casual occasion.</p>
+                        <img src="images/SNEAKER__19.png" alt="Casual Shoes">
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <h4>Formal Shoes</h4>
+                    <div data-aos="zoom-in-left">
+                        <p>Elevate your style with our sophisticated formal shoe collection. Find exquisite leather
+                            dress
+                            shoes
+                            and
+                            polished oxfords for business meetings, weddings, and special events.</p>
+                        <img src="products/shoe-2-.png" alt="Formal Shoes">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- -------------ABOUT--------------- -->
+        <section class="about" id="about">
+            <h2>ABOUT US</h2>
+            <!-- Part 1 - Pushed to the left -->
+            <div data-aos="zoom-in-down">
+                <div class="about-content left">
+                    <h3><i class="fas fa-flag"></i> Our Brand Story</h3>
+                    <p>Welcome to StepStar! We began our journey in 2010, driven by a passion for sneakers and the
+                        belief
+                        that footwear should be a reflection of personal style and comfort. Since then, we have been
+                        committed
+                        to delivering top-quality shoes that elevate your fashion game without compromising on comfort
+                        and
+                        performance.</p>
+                    <h3><i class="fas fa-eye"></i> Vision and Values</h3>
+                    <p>At StepStar, we envision a world where every step you take is a statement of style and
+                        confidence.
+                        Our values center around innovation, sustainability, and customer satisfaction. We constantly
+                        strive
+                        to push the boundaries of design and technology to create the perfect pair of sneakers for you.
+                    </p>
+                    <h3><i class="fas fa-paint-brush"></i> Design Philosophy</h3>
+                    <p>We believe that great design is not just about aesthetics but also about functionality. Our
+                        design
+                        philosophy is rooted in combining cutting-edge styles with ergonomic features, ensuring that our
+                        sneakers not only look great but also provide unparalleled comfort and support for your feet.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- Part 2 - Pushed to the right -->
+            <div data-aos="zoom-in-up">
+                <div class="about-content right">
+                    <h3><i class="fas fa-hammer"></i> Craftsmanship</h3>
+                    <p>Each pair of StepStar shoes is a masterpiece of craftsmanship. Our skilled artisans meticulously
+                        handcraft every detail, from selecting the finest materials to ensuring precision stitching. We
+                        take
+                        pride in the dedication and expertise that goes into making every pair truly exceptional.</p>
+                    <h3><i class="fas fa-check-circle"></i> Unique Selling Points</h3>
+                    <p>What sets StepStar apart is our commitment to innovation and customer needs. Our shoes are
+                        equipped
+                        with unique features and technologies, such as custom-fit options, eco-friendly materials, and
+                        advanced
+                        cushioning systems. Experience the difference with StepStar.</p>
+                    <h3><i class="fas fa-users"></i> Collaborations</h3>
+                    <p>We have collaborated with renowned artists, designers, and athletes to create exclusive
+                        collections
+                        that
+                        celebrate art, culture, and sports. These special editions are a tribute to creativity and
+                        diversity,
+                        making every pair of StepStar shoes a true collectible.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="advertisement-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>ADVERT 1</h2>
+                        <img src="IMAGES/advert-1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>ADVERT 2</h2>
+                        <img src="IMAGES/advert-2.jpg" alt="Slide 2">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    <div class="swiper-slide">
+                        <h2>ADVERT 3</h2>
+                        <img src="IMAGES/advert-3.jpg" alt="Slide 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>ADVERT 4</h2>
+                        <img src="IMAGES/advert-4.jpg" alt="Slide 2">
+                    </div>
+                </div>
+                <button class="buy-now-btn">Buy Now</button>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+
+
+        <div class="blog-heading">
+            <h2 style="white-space: nowrap;">SHOE SPOTLIGHT</h2>
+        </div>
+        <section class="blog" id="blog">
+            <div class="blog-post">
+                <i class="fas fa-shoe-prints"></i>
+                <h2>Trending Shoe Styles for 2023</h2>
+                <img src="images/SNEAKER__15.png" alt="Trending Shoe Styles">
+                <p>
+                    Introduction and description of the latest shoe trends for the season.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <i class="fas fa-tools"></i>
+                <h2>Shoe Care and Maintenance Tips</h2>
+                <img src="IMAGES/SNEAKER__14.png" alt="Shoe Care and Maintenance Tips">
+                <p>
+                    Tips on how to properly care for different shoe materials and keep them looking great.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <i class="fas fa-calendar-alt"></i>
+                <h2> Choosing the Right Shoes for Different Occasions</h2>
+                <img src="images/SNEAKER__7.png" alt="Choosing the Right Shoes for Different Occasions">
+                <p>
+                    Guide on selecting the perfect pair of shoes for various events or activities.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <i class="fas fa-user-secret"></i>
+                <h2>Celebrity Shoe Style</h2>
+                <img src="images/SNEAKER__4.png" alt="Celebrity Shoe Style">
+                <p>
+                    Showcasing the footwear choices of famous celebrities and affordable alternatives.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <i class="fas fa-history"></i>
+                <h2>History of Iconic Shoe Brands</h2>
+                <img src="images/SNEAKER__8.png" alt="History of Iconic Shoe Brands">
+                <p>
+                    Exploring the fascinating history and evolution of well-known shoe brands.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <i class="fas fa-leaf"></i>
+                <h2>Sustainable and Eco-Friendly Shoe Brands</h2>
+                <img src="images/SNEAKER__1.png" alt="Sustainable and Eco-Friendly Shoe Brands">
+                <p>
+                    Promoting environmentally conscious shoe brands and the importance of sustainability.
+                </p>
+                <!-- "Read More" button linking to the full blog post -->
+                <a href="#0" class="read-more">Read More</a>
+            </div>
+        </section>
+
+        <section class="discount-section">
+            <div data-aos="zoom-in-right">
+                <div class="discount-content">
+                    <div class="discount-text">
+                        <h2>Limited Time Offer, Get 50% off</h2>
+                        <p>Get ready to step up your style with our
+                            exclusive collection of discounted shoes. Elevate your
+                            footwear game and embrace the perfect blend of fashion and savings.
+                            From sleek sneakers that redefine casual elegance to sophisticated heels that
+                            add a touch of glamour, our curated selection offers something for every taste.
+                        </p>
+                        <button class="shop-now-button">Shop Now</button>
+                    </div>
+                    <div class="discount-image">
+                        <img src="IMAGES/slide-1.jpg" alt="Discount Shoes">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h2 style="text-align: center; font-size: 25px; text-decoration: underline;">Contact Us</h2>
+                    <p>Visit us at our shoe store for the latest trends.</p>
+                    <address>
+                        123 Shoe Street<br>
+                        Cityville, ShoeLand<br>
+                        Postal Code: 111232
+                    </address>
+                    <p>Phone: +234-814-0392-260</p>
+                    <p>Email: info@stepStar.com</p>
+                </div>
+                
+                <div class="contact-center">
+                    <p>We're social! Connect with us:</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="subscription-section">
+            <div class="subscription-content">
+                <div class="container">
+                    <h2>Stay Up-to-Date with the Latest Trends</h2>
+                    <p>
+                        Subscribe to our newsletter and be the first to know about the hottest shoe styles for 2023.
+
+                    </p>
+                </div>
+                <div class="subscription-form">
+                    <input type="email" placeholder="Enter your email address" required class="search-sub">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --------------ADDITIONAL INFO------------------ -->
+        <section class="info-box">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                <div class="info-inner">
+                    <div class="info-item">
+                        <div class="info-item-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="info-item-text">
+                            <h3>Money Back Guarantee</h3>
+                            <p>Satisfied or refunded. See our refund policy for more details.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-item-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="info-item-text">
+                            <h3>24/7 Customer Support</h3>
+                            <p>Top-notch support available. Contact us for any assistance with your order.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-item-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="info-item-text">
+                            <h3>Secure Payments</h3>
+                            <p>Our payment systems are safe and secured for your peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ------------ADDITIONAL INFO ENDS------------------ -->
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <h4>More About Us</h4>
+                <p class="footer-more">
+                    StepStar is committed to providing the best selection of quality footwear for all ages. We are
+                    passionate about delivering exceptional customer service and helping you find the perfect pair of
+                    shoes for any occasion.
+                </p>
+            </div>
+            <div class="footer-center">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return and Refund Policy</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-google-plus"></a>
+            </div>
+            <div class="payment-options">
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-paypal"></i>
+                <i class="fa-brands fa-cc-discover"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2023 StepStar. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- -----------SHOE CATEGORY------- -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".filter-button");
+            const shoeItems = document.querySelectorAll(".shoe-item");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const category = this.getAttribute("data-category");
+
+                    shoeItems.forEach(item => {
+                        const itemCategory = item.getAttribute("data-category");
+
+                        if (category === "all" || category === itemCategory) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+    <!---------------MENU BTN--------------------  -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.querySelector('.nav-system');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (event) => {
+            const target = event.target;
+            if (!target.matches('#menu-btn') && !target.closest('nav')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+    </script>
+
+
+
+    <!------------------ ADVERT SLIDE ------------------>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var advertisementSwiper = new Swiper('.advertisement-slider .swiper-container', {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.advertisement-slider .swiper-button-next',
+                    prevEl: '.advertisement-slider .swiper-button-prev',
+                },
+                pagination: {
+                    el: '.advertisement-slider .swiper-pagination',
+                    clickable: true,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true,
+                },
+            });
+    
+            // Add a media query for screens with a maximum width of 768px
+            var mediaQuery768 = window.matchMedia('(max-width: 768px)');
+            if (mediaQuery768.matches) {
+                advertisementSwiper.autoplay.stop(); // Stop autoplay on small screens
+            }
+        });
+    </script>
+    
+
+
+
+    <!----------------- PRODUCT SLIDE ----------------->
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper Slide
+            const productSlide = new Swiper(".product-slide", {
+                direction: 'vertical',
+                slidesPerView: 2,
+                spaceBetween: 10,
+                // Add any additional Swiper configuration options here
+                // For example, navigation buttons and pagination
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                mousewheel: {
+                    invert: false,
+                },
+                centeredSlide: true,
+                grabCursor: true,
+                on: {
+                    slideChange: function () {
+                        // Do something when a slide changes
+                        console.log('Slide changed');
+
+                        // Get all slide elements
+                        const slides = document.querySelectorAll(".swiper-slide");
+
+                        // Loop through each slide
+                        slides.forEach((slide) => {
+                            if (slide.classList.contains("swiper-slide-active")) {
+                                // If the slide is active, set the image width to 100%
+                                const img = slide.querySelector("img");
+                                img.style.width = "100%";
+                            } else {
+                                // If the slide is inactive, set the image width to 40%
+                                const img = slide.querySelector("img");
+                                img.style.width = "40%";
+                            }
+                        });
+                    },
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+            });
+        });
+    </script>
+
+
+
+
+    <!-- ----------------------FONT AWESOME----------------------------- -->
+    <script src="https://kit.fontawesome.com/28be1bd190.js" crossorigin="anonymous"></script>
+
+    <!-- --------------------------MAP------------------------------- -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <!-- -----------------------SWIPER SLIDER---------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- ------------------------MAIN JS--------------------------------- -->
+    <script src="JS/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
